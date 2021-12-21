@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/contacto.css" rel="stylesheet" type="text/css">
+    <title>Contacto</title>
+</head>
+<body>
+  <header>
+      <nav class="clase-navegador">
+        <a href="../html/index.html" class="active">Inicio</a>
+        <a href="../html/productos.html">Productos</a>
+        <a href="../html/contacto.html">Contacto</a>
+        <a id="derecha" href="../html/registro.html">Registro</a>
+        <a id="derecha" href="../html/login.html">Login</a>
+      </nav>
+  </header>
+    
+  <main>
+    <form action="" id="formulario">
+        <h3>Nombre completo</h3>
+        <input type="text" id="nombrecompleto" placeholder="Nombre Apellido1 Apellido2" onfocusout="validarnombrecompleto()">
+        <p id="errornombrecom"></p>
+
+        <h3>Email</h3>
+        <input type="email" id="mail" placeholder="Ejemplo@ejemplo.com" onfocusout="validaremail()">
+        <p id="erroremail"></p>
+
+        <h3>Texto</h3>
+        <textarea id="texto" placeholder="Este es un texto de ejemplo ?, Sí !" onkeypress="validartexto()"></textarea>
+        <p id="errortexto"></p>
+
+        <h3>Captcha</h3>
+        <p id="vercaptcha"></p>
+        <input id="captcha" placeholder="1, 2, 3 ...." onfocusout="validarcaptcha()">
+        <p id="errorcapt"></p>
+        <br>
+        <input type="submit" value="Enviar">
+        <p id="error"></p>
+    </form>
+  </main>
+
+  <footer class="footer-distributed">
+
+    <div class="footer-right">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+      <p class="footer-links">
+        <a class="link-1" href="#">Home</a>
+
+        <a href="#">Blog</a>
+
+        <a href="#">Pricing</a>
+
+        <a href="#">About</a>
+
+        <a href="#">Faq</a>
+
+        <a href="#">Contact</a>
+      </p>
+
+      <p>Company Name &copy; 2021</p>
+    </div>
+
+  </footer>
+
+  <script src="../js/contacto.js"></script>
+  
+</body>
+</html>

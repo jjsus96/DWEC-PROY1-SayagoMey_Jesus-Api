@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/registro.css" rel="stylesheet" type="text/css">
+    <title>Registro</title>
+</head>
+<body>
+  <header>
+    <nav class="clase-navegador">
+      <a href="../html/index.html" class="active">Inicio</a>
+      <a href="../html/productos.html">Productos</a>
+      <a href="../html/contacto.html">Contacto</a>
+      <a id="derecha" href="../html/registro.html">Registro</a>
+      <a id="derecha" href="../html/login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="" id="formulario">
+      <h1>Registro</h1>
+
+      <h3>Nombre</h3>
+      <input type="text" id="nombre" placeholder="Nombre" onfocusout="validarnombre()">
+      <p id="errornombre"></p>
+
+      <h3>Apellidos</h3>
+      <input type="text" id="apellidos" placeholder="Apellidos" onfocusout="validarapellidos()">
+      <p id="errorapellidos"></p>
+
+      <h3>Email</h3>
+      <input type="email" id="mail" placeholder="Ejemplo@ejemplo.com" onfocusout="validaremail()">
+      <p id="erroremail"></p>
+
+      <h3>Fecha de nacimiento</h3>
+      <input id="fecha" placeholder="DD/MM/YYYY" onfocusout="validarfecha()">
+      <p id="errorfecha"></p>
+
+      <h3>Seleccione 3 Motocicletas que le gusten</h3>
+        <div onfocusout="check()">
+        <input type="checkbox"> <label for="cbox2">CBR650R</label>
+        <input type="checkbox"> <label for="cbox2">CMX500 Rebel</label>
+        <input type="checkbox"> <label for="cbox2">CB650R</label>
+        <br>
+        <input type="checkbox"> <label for="cbox2">Africa Twin</label>
+        <input type="checkbox"> <label for="cbox2">CB500F</label>
+        <input type="checkbox"> <label for="cbox2">CB125R</label>
+        <p id="errorcheck"></p>
+      </div>
+      <h3>contraseña</h3>
+      <input type="password" id="clave" placeholder="Contraseña" onfocusout="validarclave()">
+      <p id="errorclave"></p>
+
+      <h3>Confirmar contraseña</h3>
+      <input type="password" id="clave2" placeholder="Confirmar Contraseña" onfocusout="validarclave2()">
+      <p id="errorclave2"></p>
+
+      <h3>Captcha</h3>
+      <p id="vercaptcha"></p>
+      <input id="captcha" placeholder="1, 2, 3 ...." onfocusout="validarcaptcha()">
+      <p id="errorcapt"></p>
+      <br>
+      <br>
+      <input type="submit" value="Enviar">
+      <p id="error"></p>
+    </form>
+  </main>
+
+  <footer class="footer-distributed">
+
+    <div class="footer-right">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+      <p class="footer-links">
+        <a class="link-1" href="#">Home</a>
+
+        <a href="#">Blog</a>
+
+        <a href="#">Pricing</a>
+
+        <a href="#">About</a>
+
+        <a href="#">Faq</a>
+
+        <a href="#">Contact</a>
+      </p>
+
+      <p>Company Name &copy; 2021</p>
+    </div>
+
+  </footer>
+
+  <script src="../js/registro.js"></script>
+</body>
+</html>

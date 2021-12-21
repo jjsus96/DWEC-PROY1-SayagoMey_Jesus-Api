@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/login.css" rel="stylesheet" type="text/css">
+    <title>Login</title>
+</head>
+<body>
+  <header>
+    <nav class="clase-navegador">
+      <a href="../html/index.html" class="active">Inicio</a>
+      <a href="../html/productos.html">Productos</a>
+      <a href="../html/contacto.html">Contacto</a>
+      <a id="derecha" href="../html/registro.html">Registro</a>
+      <a id="derecha" href="../html/login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="" id="formulario">
+        <h1>Bienvenido</h1>
+        <h3>Usuario</h3>
+        <input id="usuario" type="text" placeholder="mayusc, minusc o num" onfocusout="validarusuario()">
+        <p id="errorusuario"></p>
+
+        <h3>Contraseña</h3>
+        <input id="clave" type="password" placeholder="mayusc, minusc y num" onfocusout="validarcontrasena()">
+        <p id="errorclave"></p>
+        
+        <br>
+        <input type="submit" value="Enviar">
+        <p id="error"></p>
+    </form>
+  </main>
+  <footer class="footer-distributed">
+
+    <div class="footer-right">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+      <p class="footer-links">
+        <a class="link-1" href="#">Home</a>
+
+        <a href="#">Blog</a>
+
+        <a href="#">Pricing</a>
+
+        <a href="#">About</a>
+
+        <a href="#">Faq</a>
+
+        <a href="#">Contact</a>
+      </p>
+
+      <p>Company Name &copy; 2021</p>
+    </div>
+
+  </footer>
+    <script src="../js/login.js"></script>
+</body>
+</html> 

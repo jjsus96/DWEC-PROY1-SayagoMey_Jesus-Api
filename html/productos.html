@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/productos.css" rel="stylesheet" type="text/css">
+    <title>Productos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="clase-navegador">
+          <a href="../html/index.html" class="active">Inicio</a>
+          <a href="../html/productos.html">Productos</a>
+          <a href="../html/contacto.html">Contacto</a>
+          <a id="derecha" href="../html/registro.html">Registro</a>
+          <a id="derecha" href="../html/login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="principal">
+            <div id="contenedor">
+
+            </div>
+
+            <div id="grande">
+
+            </div>
+        </div>
+
+        <template id="vistaprod">
+            <div class="vista">
+                <br>
+                <span class="nombre"></span>
+                <br>
+                <br>
+                <img id="imggrande">
+                <br>
+                <p class="descrip"></p>
+                <h3>Precio</h3>
+                <p class="precio"></p>
+                <br>
+                <b>Características principales</b>
+                <button onclick="desplegar()">⇣</button>
+                <ul id="listado">
+                    <li class="caract1"></li>
+                    <li class="caract2"></li>
+                    <li class="caract3"></li>
+                    <li class="caract4"></li>
+                </ul>
+            </div>
+        </template>
+
+        <template id="plantilla">
+            <div class="prod" onclick="sumarimagen(1)">
+                <img id="imgpeque">
+                <br>
+                <b>Modelo: </b> <span class="nombre"></span>
+                <button class="borrar" onclick="borrar(this)">Borrar</button>            
+            </div>
+        </template>
+    </main>
+    <footer>
+        
+    </footer>
+
+    <script src="../js/productos.js"></script>
+
+</body>
+</html>
