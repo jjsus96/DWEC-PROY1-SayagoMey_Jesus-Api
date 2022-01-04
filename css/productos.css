@@ -1,3 +1,11 @@
+body {
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../img/pattern.png);
+ }
+
 .clase-navegador {
     overflow: hidden;
     background-color: #333;
@@ -58,7 +66,6 @@
     margin-top:10px;
     float: right;
     width: 70%;
-    background-color: silver;
     text-align: center;
   }
 
@@ -81,17 +88,6 @@
   font-family: Roboto;
 }
 
-section {
-  width: 100%;
-  display: inline-block;
-  background: #ccc;
-  height: 60vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
 .footer-distributed {
   background-color: #292c2f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -100,10 +96,7 @@ section {
   text-align: left;
   font: normal 16px sans-serif;
   padding: 45px 50px;
-  position: relative;
-  bottom: 0;
-  height: 60px;
-  width: 100%;
+  margin-top: auto;
 }
 
 .footer-distributed .footer-left p {
@@ -123,7 +116,6 @@ section {
 }
 
 .footer-distributed p.footer-links a {
-  display: inline-block;
   line-height: 1.8;
   text-decoration: none;
   color: inherit;
@@ -135,7 +127,6 @@ section {
   font-size: 20px;
   left: 0;
   color: #fff;
-  display: inline-block;
   padding-right: 5px;
 }
 

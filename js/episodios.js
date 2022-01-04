@@ -1,5 +1,5 @@
 //Generamos una variable que contenga la URL de la API.
-let api = "https://rickandmortyapi.com/api/character/";
+let api = "https://rickandmortyapi.com/api/episode/";
 
 //Recibimos los datos de la API.
 let datos = (apiURL) => {
@@ -22,29 +22,21 @@ let mostrardatos = (data) => {
     let html = "";
     //Por cada elemento que obtenemos de la API, hacemos las siguientes acciones.
     data.results.forEach(element => {
-        //Crea un div principal en el que se almacenará la información de cada personaje.
-        html += '<div style="float:left; margin-left: 7px; margin-right:7px; margin-top: 5px;">';
-        //Crea el div en el que va a ir la imagen.
-        html += '<div>';
-        //Imprime la imagen de la API.
-        html += `<img src="${element.image}" alt="..."`;
-        //Genera un div dentro del de imagen para mostrar el texto necesario.
-        html += '<div>';
-        //Pinta en el HTML el nombre de cada personaje.
-        html += `<h5>${element.name}</h5>`;
-        //Muestra el estado en el que se encuentra el presonaje.
-        html += `<p>Estado: ${element.status} </p>`;
-        //Nos indica el genero del personaje.
-        html += `<p>Genero: ${element.gender} </p>`;
-        //Escribe cual es la especie de cada personaje.
-        html += `<p>Especie: ${element.species} </p>`;
-        //Cierra todos los div.
-        html += '</div>';
-        html += '</div>';
-        html += '</div>';
+        //Crea una nueva fila en la tabla.
+        html += '<tr>';
+        //Añade a la fila creada una columna con el id.
+        html += `<td>${element.id}</td>`;
+        //Crea una nueva columna en la fila con el nombre.
+        html += `<td>${element.name}</td>`;
+        //Inserta una nueva columna en la fila con la fecha de emisión.
+        html += `<td>${element.air_date}</td>`;
+        //Añade una columna con la temporada y el episodio a la fila.
+        html += `<td>${element.episode} </td>`;
+        //Termina la línea.
+        html += '</tr>';
     });
     //Manda todos los datos que hemos obtenido en la función al HTML y los imprime.
-    document.getElementById('infopersonajes').innerHTML = html;
+    document.getElementById("InsertaEpisodios").innerHTML = html;
 }
 
 //Genera botones para poder pasar de página.

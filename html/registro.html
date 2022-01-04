@@ -14,11 +14,11 @@
       <a href="../html/productos.html">Productos</a>
       <a href="../html/contacto.html">Contacto</a>
       <a href="../html/personajes.html">Personajes</a>
+      <a href="../html/episodios.html">Episodios</a>
       <a id="derecha" href="../html/registro.html">Registro</a>
       <a id="derecha" href="../html/login.html">Login</a>
     </nav>
   </header>
-
   <main>
     <form action="" id="formulario">
       <h1>Registro</h1>
@@ -39,15 +39,15 @@
       <input id="fecha" placeholder="DD/MM/YYYY" onfocusout="validarfecha()">
       <p id="errorfecha"></p>
 
-      <h3>Seleccione 3 Motocicletas que le gusten</h3>
+      <h3>Seleccione al menos 3 personajes</h3>
         <div onfocusout="check()">
-        <input type="checkbox"> <label for="cbox2">CBR650R</label>
-        <input type="checkbox"> <label for="cbox2">CMX500 Rebel</label>
-        <input type="checkbox"> <label for="cbox2">CB650R</label>
+        <input type="checkbox"> <label for="cbox2">Rick</label>
+        <input type="checkbox"> <label for="cbox2">Morty</label>
+        <input type="checkbox"> <label for="cbox2">Beth</label>
         <br>
-        <input type="checkbox"> <label for="cbox2">Africa Twin</label>
-        <input type="checkbox"> <label for="cbox2">CB500F</label>
-        <input type="checkbox"> <label for="cbox2">CB125R</label>
+        <input type="checkbox"> <label for="cbox2">Summers</label>
+        <input type="checkbox"> <label for="cbox2">Jerry</label>
+        <input type="checkbox"> <label for="cbox2">Bird Man</label>
         <p id="errorcheck"></p>
       </div>
       <h3>contraseña</h3>
@@ -63,44 +63,33 @@
       <input id="captcha" placeholder="1, 2, 3 ...." onfocusout="validarcaptcha()">
       <p id="errorcapt"></p>
       <br>
-      <br>
       <input type="submit" value="Enviar">
       <p id="error"></p>
     </form>
   </main>
-
   <footer class="footer-distributed">
 
     <div class="footer-right">
 
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-github"></i></a>
+      <a href="https://es-la.facebook.com/RickandMorty/"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/RickandMorty?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/rickandmorty/?hl=es"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/jjsus96/DWEC-PROY1-SayagoMey_Jesus-Api"><i class="fa fa-github"></i></a>
 
     </div>
 
     <div class="footer-left">
 
       <p class="footer-links">
-        <a class="link-1" href="#">Home</a>
-
-        <a href="#">Blog</a>
-
-        <a href="#">Pricing</a>
-
-        <a href="#">About</a>
-
-        <a href="#">Faq</a>
-
-        <a href="#">Contact</a>
+        Web de uso didáctico
       </p>
 
-      <p>Company Name &copy; 2021</p>
+      <p>Rick and Morty &copy; 2022</p>
     </div>
-
   </footer>
 
   <script src="../js/registro.js"></script>
+  <script src="https://kit.fontawesome.com/722a7f9505.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

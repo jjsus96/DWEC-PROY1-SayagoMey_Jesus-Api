@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/index.css" rel="stylesheet" type="text/css">
+    <link href="../css/episodios.css" rel="stylesheet" type="text/css">
     <title>Inicio</title>
 </head>
 <body>
@@ -19,23 +19,27 @@
       <a id="derecha" href="../html/login.html">Login</a>
     </nav>
   </header>
-  <br>
   <main>
-    <div id="contenedor" class="contenedor">
-        
-        <a class="anterior" data-action="anterior">&#10094;</a>
-        <a class="siguiente" data-action="siguiente">&#10095;</a>
-        
-    </div>
+      <table id="Episodios" class="table">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>Nombre</th>
+            <th>Fecha de emisión</th>
+            <th>Temporada/Episodio</th>
+        </tr>
+        </thead>
+        <tbody id="InsertaEpisodios">
 
-    <template id="plantilla">
-      <div class="imagen">
-        <img src="" style="width:100%">
-      </div>
-    </template>
+        </tbody>
+    </table>
+
+    <div class="botones">
+      <ul id="paginas">
+      </ul>
+  </div>
+    
   </main>
-  <br>
-  
   <footer class="footer-distributed">
 
     <div class="footer-right">
@@ -57,8 +61,8 @@
     </div>
   </footer>
 
-    <script src="../js/index.js"></script>
-    <script src="https://kit.fontawesome.com/722a7f9505.js" crossorigin="anonymous"></script>
+  <script src="../js/episodios.js"></script>
+  <script src="https://kit.fontawesome.com/722a7f9505.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

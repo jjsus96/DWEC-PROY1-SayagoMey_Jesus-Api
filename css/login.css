@@ -1,3 +1,11 @@
+body {
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../img/pattern.png);
+ }
+
 .clase-navegador {
     overflow: hidden;
     background-color: #333;
@@ -37,15 +45,17 @@
   font-family: Roboto;
 }
 
-section {
-  width: 100%;
-  display: inline-block;
-  background: #ccc;
-  height: 60vh;
+main {
+  margin-left: 35%;
+  margin-right: 35%;
+  background-color: white;
+  border-radius: 5%;
+  margin-top: 5%;
+}
+
+form {
   text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
+  opacity: 100%;
 }
 
 .footer-distributed {
@@ -56,6 +66,7 @@ section {
   text-align: left;
   font: normal 16px sans-serif;
   padding: 45px 50px;
+  margin-top: auto;
 }
 
 .footer-distributed .footer-left p {
@@ -75,7 +86,6 @@ section {
 }
 
 .footer-distributed p.footer-links a {
-  display: inline-block;
   line-height: 1.8;
   text-decoration: none;
   color: inherit;
@@ -87,7 +97,6 @@ section {
   font-size: 20px;
   left: 0;
   color: #fff;
-  display: inline-block;
   padding-right: 5px;
 }
 

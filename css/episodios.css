@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box
+}
+
 body {
   margin:0;
   display: flex;
@@ -7,55 +11,70 @@ body {
  }
 
 .clase-navegador {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .clase-navegador a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .clase-navegador a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .clase-navegador a.active {
-    background-color: green;
-    color: white;
-  }
-  
-  .clase-navegador .icon {
-    display: none;
-  }
+  overflow: hidden;
+  background-color: #333;
+}
 
-  #derecha{
-    float: right;
-  }
+.clase-navegador a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+.clase-navegador a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.clase-navegador a.active {
+  background-color: green;
+  color: white;
+}
+
+.clase-navegador .icon {
+  display: none;
+}
+
+#derecha{
+  float: right;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
 * {
   font-family: Roboto;
 }
 
-main {
-  margin-left: 35%;
-  margin-right: 35%;
-  background-color: white;
-  border-radius: 5%;
-  margin-top: 5%;
+.botones {
+  text-align: center;
 }
 
-form {
+button{
   text-align: center;
-  opacity: 100%;
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 10px;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+
+table{
+  text-align: center;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 3%;
 }
 
 .footer-distributed {
@@ -86,7 +105,6 @@ form {
 }
 
 .footer-distributed p.footer-links a {
-  display: inline-block;
   line-height: 1.8;
   text-decoration: none;
   color: inherit;
@@ -98,7 +116,6 @@ form {
   font-size: 20px;
   left: 0;
   color: #fff;
-  display: inline-block;
   padding-right: 5px;
 }
 
