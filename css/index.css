@@ -47,6 +47,10 @@ img {
     vertical-align: middle;
 }
 
+main{
+  margin-top: 2%;
+}
+
 .contenedor {
   max-width: 1000px;
   position: relative;

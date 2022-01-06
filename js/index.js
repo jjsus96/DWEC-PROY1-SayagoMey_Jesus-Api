@@ -4,10 +4,10 @@
 let contenedor = document.getElementById("contenedor");
 //Almacenamos nuestras imágenes en un array.
 let imagenes = [
-  "../img/img1.jpg",
-  "../img/img2.jpg",
-  "../img/img3.jpg",
-  "../img/img4.jpg"
+  "img/img1.jpg",
+  "img/img2.jpg",
+  "img/img3.jpg",
+  "img/img4.jpg"
 ];
 
 //Creamos una variable para almacenar nuestro template.
