@@ -31,16 +31,9 @@ let mostrardatos = (data) => {
         //Genera un div dentro del de imagen para mostrar el texto necesario.
         html += '<div>';
         //Pinta en el HTML el nombre de cada personaje.
-        html += `<h3>${element.name}</h3>`;
+        html += `<h3 style="background-color: white;">Id: ${element.id}</h3>`;
         //Muestra el estado en el que se encuentra el presonaje.
-        html += `<p>Estado: ${element.status} </p>`;
-        //Nos indica el genero del personaje.
-        html += `<p>Genero: ${element.gender} </p>`;
-        //Escribe cual es la especie de cada personaje.
-        html += `<p>Especie: ${element.species} </p>`;
-        //Cierra todos los div.
-        html += `<p style="font-size:12px";><i class="fas fa-globe"></i>${element.location.name} </p>`;
-        html += '</div>';
+         html += '</div>';
         html += '</div>';
         html += '</div>';
     });
@@ -60,3 +53,46 @@ let paginas = (info) => {
 
 //llama a la función datos.
 datos(api)
+
+//Seleccionamos los elementos que vamos a utilizar del html.
+let input = document.querySelector('input');
+let button = document.querySelector('.carga');
+let vistacontainer = document.querySelector('.vista-container');
+
+//Al hacer click ejecuta los parámetros almacenados.
+button.addEventListener('click',(e) => {
+    //Previene la entrada por defecto.
+    e.preventDefault();
+    //Validamos el valor introducido para que se pueda realizar una petición.
+    if (input.value > 0 && input.value < 827 && input.value % 1 == 0){
+        traervista(input.value);
+    }
+    //Si el número no es válido se muestra un mensaje de error.
+    else{
+        alert("id no válido");
+     }    
+})
+
+//Realiza la llamada a la API con el ID introducido.
+function traervista (identificador) {
+    fetch(`https://rickandmortyapi.com/api/character/${identificador}/`)
+    //Cuando todo sale bien obtenemos nuestra respuesta.
+    .then((res) => res.json())
+    //Pasa los datos a la función.
+    .then((datos) => {
+        crearvista(datos);
+})
+    //En caso de error nos muestra su código por consola.
+    .catch(error => { console.error("Error:", error) })
+}
+
+//Genera la vista del personaje que queremos ver.
+function crearvista(vista){
+    //Inserta los diferentes parámetros en su campo correspondiente del HTML.
+    document.getElementById("imagen1").src = vista.image;
+    document.getElementById("nombre").innerHTML ="Nombre: " + vista.name;
+    document.getElementById("estado").innerHTML ="Estado: " + vista.status;
+    document.getElementById("genero").innerHTML ="Género: " + vista.gender;
+    document.getElementById("especie").innerHTML ="Especie: " + vista.species;
+    document.getElementById("lugar").innerHTML ="Última localización: " + vista.location.name;
+}
